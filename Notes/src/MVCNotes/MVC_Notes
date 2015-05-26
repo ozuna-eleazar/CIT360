@@ -1,0 +1,26 @@
+MVC Notes
+
+MVC is not a design pattern but instead an Architectural pattern. 
+MVC consists of Model, View, Controller and with this pattern it allows a separation
+of responsibilities to better outline and make the code better to maintain and use by all.
+
+Model - Responsible for handling data and business logic. The model gives the controller 
+a data representation of whatever the user requested. The model contains the most important 
+part of our application logic, the logic that applies to the problem we are dealing with.
+
+View - Responsible for presenting the data to the user.The View provides different ways to 
+present the data received from the model. They may be templates where that data is filled. 
+There may be several different views and the controller has to decide which one to use.
+
+Controller - Responsible for receiving user requests and call resources to get the task done. 
+It manages the user requests (received as HTTP GET or POST requests when the user clicks on 
+GUI elements to perform actions).
+
+The primary advantage of the MVC design pattern: MVC makes model classes reusable without 
+modification. Removing unnecessary dependencies makes code that is less buggy and easier 
+to maintain because it is reusable without modification.
+
+
+  I have been constantly working on a site that I built for a friend's photography business.
+LynnPagelPhotography.com was built with the MVC model. I will be pushing the code to my 
+repository to show how everything is separated between the Model, View, and Controller. 
