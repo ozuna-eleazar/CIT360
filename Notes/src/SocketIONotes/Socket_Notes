@@ -1,0 +1,30 @@
+Socket I/O Notes
+
+A socket is one end-point of a two-way communication link between two programs 
+running on the network. Socket classes are used to represent the connection 
+between a client program and a server program. The java.net package provides 
+two classes--Socket and ServerSocket--that implement the client side of the 
+connection and the server side of the connection, respectively.
+
+A stream - a connection between our computers. the way we communicate are streams,
+there are 2 main streams in the communications, output and input. so when I send 
+a message it will get packaged and sent to the other computer. The message coming 
+in is in the input stream.
+
+What does a socket do and how does it do it?
+
+Normally, a server runs on a specific computer and has a socket that is bound to 
+a specific port number. The server just waits, listening to the socket for a client
+to make a connection request.
+
+On the client-side: The client knows the hostname of the machine on which the server 
+is running and the port number on which the server is listening. To make a connection 
+request, the client tries to connect with the server on the server's machine and 
+port. The client also needs to identify itself to the server so it binds to a local 
+port number that it will use during this connection. This is usually assigned by 
+the system.
+
+Upon acceptance, the server gets a new socket bound to the same local port and also 
+has its remote endpoint set to the address and port of the client.
+On the client side, if the connection is accepted, a socket is successfully created 
+and the client can use the socket to communicate with the server.

@@ -25,3 +25,4 @@ to maintain because it is reusable without modification.
   I have been constantly working on a site that I built for a friend's photography business.
 LynnPagelPhotography.com was built with the MVC model. I will be pushing the code to my 
 repository to show how everything is separated between the Model, View, and Controller. 
+
