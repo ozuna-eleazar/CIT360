@@ -10,3 +10,17 @@ Use cases in a use case diagram can be organized and arranged according
 to their relevance, level of abstraction and impacts to users. They can be connected 
 to show their dependency, inclusion and extension relationships.
 
+A use case typically includes:
+
+Name and description
+1. Requirements
+2. Constraints
+3. Scenarios
+4. Scenario diagrams
+5. Additional information
+
+
+
+
+
+
