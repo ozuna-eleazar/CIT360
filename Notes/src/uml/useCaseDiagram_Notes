@@ -1,0 +1,12 @@
+Use Case Diagram
+
+Shows use cases, actors, and their interrelationships. A use case is an objective users
+wants to achieve with a system. 
+
+Use case diagram provides a graphical overview of goals (represented by use cases) 
+users (represented by actors) want to achieve by using the 
+system (represented by system boundary but is often opt out in diagram). 
+Use cases in a use case diagram can be organized and arranged according 
+to their relevance, level of abstraction and impacts to users. They can be connected 
+to show their dependency, inclusion and extension relationships.
+
