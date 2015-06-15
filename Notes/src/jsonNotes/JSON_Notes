@@ -31,3 +31,9 @@ Small Example of an object that has 3 fields
     "member": false
 }
 
+
+Creating JSON is often referred to a process known as serialization, where you basically
+serialize (convert) the data to a human readable output; in this case JSON. There are 
+many different ways to handle serialisation of data to JSON and many different ways 
+of embedding objects in the JSON. The problem comes when you wish to deserialize the 
+JSON, convert the JSON back to your object.
