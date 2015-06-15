@@ -1,0 +1,24 @@
+Application Control Pattern
+
+
+- Is a centralized point for handling screen navigation and flow of an application.
+- To control UI transition logic in a central place.
+- Centralize the flow of the application and screen navigation so you can change 
+flow or logic in a single location.
+- For complex process we can define multiple controllers. 
+
+
+By centralizing decision points and controls, the controller also helps reduce 
+the amount of Java code, called scriptlets, embedded in the JavaServer Pages (JSP) page.
+
+The controller is the initial contact point for handling all requests in the system. 
+The controller may delegate to a helper to complete authentication and authorization 
+of a user or to initiate contact retrieval.
+
+- Improves modularity
+- Improves reusability
+- Improves extensibility
+
+
+
+
