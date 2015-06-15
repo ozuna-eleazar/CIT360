@@ -1,0 +1,62 @@
+***Collections Map***
+
+The java.util.Map interface represents a mapping between a key and a value. 
+The Map interface is not a subtype of the Collection interface. Therefore it 
+behaves a bit different from the rest of the collection types.
+
+Since Map is an interface you need to instantiate a concrete implementation
+of the interface in order to use it. 
+The most commonly used Map implementations are HashMap and TreeMap.
+
+HashMap maps a key and a value. It does not guarantee any order of the elements
+stored internally in the map.
+TreeMap also maps a key and a value. It guarantees the order in which
+keys or values are iterated - which is the sort order of the keys or values.
+
+Examples of creating a map instance:
+Map mapA = new HashMap();
+Map mapB = new TreeMap();
+
+To add elements to a Map you call its put() method.
+mapA.put("key1", "element 1");
+mapA.put("key2", "element 2");
+mapA.put("key3", "element 3");
+
+You can then obtain the value using the key. To do that you use the get() method.
+String element1 = (String) mapA.get("key1");
+
+You remove elements by calling the remove(Object key) method. You thus remove 
+the (key, value) pair matching the key.
+
+
+
+***Collections List***
+
+It represents an ordered list of objects, meaning you can access the elements 
+of a List in a specific order, and by an index too. You can also add the same 
+element more than once to a List.
+
+To add elements to a List you call its add() method. This method is inherited 
+from the Collection interface. 
+
+Examples:
+List listA = new ArrayList();
+
+listA.add("element 1");
+listA.add("element 2");
+listA.add("element 3");
+
+listA.add(0, "element 0");
+
+The order in which the elements are added to the List is stored, so you can 
+access the elements in the same order.
+
+
+You can remove elements in two ways:
+remove(Object element)
+remove(int index)
+
+remove(Object element) removes that element in the list, if it is present. 
+All subsequent elements in the list are then moved up in the list.
+remove(int index) removes the element at the given index. All subsequent 
+elements in the list are then moved up in the list.
