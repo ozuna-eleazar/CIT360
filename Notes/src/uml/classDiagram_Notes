@@ -1,0 +1,24 @@
+Class Diagram
+
+Shows a collection of static model elements such as classes and types, their contents, and their relationships.
+
+Typically Class Diagrams are used for:
+
+1. Explore domain concepts in the form of a domain model
+2. Analyze requirements in the form of a conceptual/analysis model 
+3. Depict the detailed design of object-oriented or object-based software
+
+A class icon is simply a rectangle divided into three compartments. The topmost compartment
+contains the name of the class. The middle compartment contains a list of attributes (member variables),
+and the bottom compartment contains a list of operations (member functions).
+
+The basics:
+1. a class
+2. an interface
+3. a data type
+4. a component.
+
+As a rule of thumb, keeping class diagrams as simple as possible allows them to be more easily understood 
+and appreciated by different types of audiences. For this purpose, remember to label your classes and 
+relationships as descriptive as possible. 
+

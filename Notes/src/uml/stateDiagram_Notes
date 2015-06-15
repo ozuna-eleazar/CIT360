@@ -1,0 +1,40 @@
+State Diagram
+
+Describes the states an object or interaction may be in, as well as the transitions between states.
+Formerly referred to as a state diagram, state chart diagram, or a state-transition diagram. 
+A state diagram describes the behavior of a single object in response to a series of events in a system. 
+Only use state diagrams for classes where it is necessary to understand the behavior of the object 
+through the entire system. Not all classes will require a state diagram.
+
+So the most important purpose of state chart diagram is to model life time of an object from creation to termination.
+
+
+Main purposes of a State Diagram:
+
+1. To model dynamic aspect of a system.
+2. To model life time of a reactive system.
+3. To describe different states of an object during its life time.
+4. Define a state machine to model states of an object.
+
+
+The basic elements are rounded boxes representing the state of the object and arrows indicating the
+transition to the next state. The activity section of the state symbol depicts what activities the 
+object will be doing while it is in that state. 
+
+Before drawing a Statechart diagram:
+
+1. Identify important objects to be analyzed.
+2. Identify the states.
+3. Identify the events.
+
+
+Sources: 
+http://www.tutorialspoint.com/uml/uml_statechart_diagram.htm
+http://www.cs.uu.nl/docs/vakken/b1ois/werkcollege/state.pdf
+http://agilemodeling.com/artifacts/stateMachineDiagram.htm
+
+
+
+
+
+
