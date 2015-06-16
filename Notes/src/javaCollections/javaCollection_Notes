@@ -60,3 +60,59 @@ remove(Object element) removes that element in the list, if it is present.
 All subsequent elements in the list are then moved up in the list.
 remove(int index) removes the element at the given index. All subsequent 
 elements in the list are then moved up in the list.
+
+
+
+***Collections Set***
+
+The java.util.Set interface is a subtype of the java.util.Collection interface. 
+It represents set of objects, meaning each element can only exists once in a Set.
+
+Since Set is an interface you need to instantiate a concrete implementation of 
+the interface in order to use it. 
+java.util.EnumSet
+java.util.HashSet
+java.util.LinkedHashSet
+java.util.TreeSet
+
+How to create the instance:
+Set setA = new EnumSet();
+Set setB = new HashSet();
+Set setC = new LinkedHashSet();
+Set setD = new TreeSet();
+
+To add elements to a Set you call its add() method.
+setA.add("element 1");
+setA.add("element 2");
+setA.add("element 3");
+
+-- When iterating the elements in the Set the order of the elements depends on 
+what Set implementation you use. --
+
+Iterator iterator = setA.iterator();
+while(iterator.hasNext(){
+  String element = (String) iterator.next();
+}
+
+You remove elements by calling the remove(Object o) method. There is no way to 
+remove an object based on index in a Set, since the order of the elements depends 
+on the Set implementation.
+
+A small example of a set:
+Set setA = new HashSet(); --Creates the new set called setA
+String element = "element 1"; --Assigns the string of element 1 to element variable
+setA.add(element); --Adds the element to the set
+System.out.println( setA.contains(element) ); --Prints out the setA
+
+
+
+
+
+
+
+
+
+
+
+
+
