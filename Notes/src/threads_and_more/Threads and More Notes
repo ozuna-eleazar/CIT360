@@ -1,0 +1,76 @@
+Threads, Executors, Runnables, Android Handlers
+
+***Threads***
+Multithreading refers to two or more tasks executing concurrently within 
+a single program. A thread is an independent path of execution within a 
+program. Many threads can run concurrently within a program. Every thread 
+in Java is created and controlled by the java.lang.Thread class. A Java 
+program can have many threads, and these threads can run concurrently, 
+either asynchronously or synchronously.
+
+- Threads are lightweight compared to processes
+- Threads share the same address space and therefore can share both data and code
+- Threads allow different tasks to be performed concurrently.
+
+There are two ways to create thread in java:
+- Implement the Runnable interface (java.lang.Runnable)
+- By Extending the Thread class (java.lang.Thread)
+
+We can create Threads by either implementing Runnable interface of by 
+extending Thread Class.
+
+Thread t = new Thread(new Runnable(){
+    @Override
+    public void run() {
+    }
+});
+
+
+
+***Executors***
+Executors are capable of running asynchronous tasks and typically manage a 
+pool of threads, so we don't have to create new threads manually. 
+
+Example of using executors:
+ExecutorService executor = Executors.newSingleThreadExecutor();
+executor.submit(() -> {
+    String threadName = Thread.currentThread().getName();
+    System.out.println("Hello " + threadName);
+});
+
+The class Executors provides convenient factory methods for creating 
+different kinds of executor services.
+
+
+There are a few different ways to delegate tasks for execution to an ExecutorService:
+
+execute(Runnable)
+submit(Runnable)
+submit(Callable)
+invokeAny(...)
+invokeAll(...)
+
+The execute(Runnable) method takes a java.lang.Runnable object, and executes it asynchronously. 
+ExecutorService executorService = Executors.newSingleThreadExecutor();
+
+executorService.execute(new Runnable() {
+    public void run() {
+        System.out.println("Asynchronous task");
+    }
+});
+
+executorService.shutdown();
+
+
+
+***Runnables***
+
+Runnable represent a task in Java which is executed by Thread. java.lang.Runnable 
+is an interface and defines only one method called run().
+
+
+
+***Handlers***
+Allows send messages between two threads in a safe manner, that means 
+that sending thread puts message into destination thread queue, and 
+this destination queue will process this message in its appropriate time.
