@@ -65,12 +65,29 @@ executorService.shutdown();
 
 ***Runnables***
 
+Runnables are NOT Threads. The Runnable interface is used to define a certain task 
+that we want to execute, and the whole implementation of this task is inside its 
+only method, run() (which accepts no arguments). The Runnable class by itself does
+not create a separate thread, because this is what Thread actually does.
 Runnable represent a task in Java which is executed by Thread. java.lang.Runnable 
 is an interface and defines only one method called run().
 
-
+Why use Runnable?
+ - Modularity
+ - Ease of use. Runnable only has one method, public void run(). It accepts no 
+   arguments and is as simple as possible.
+ - Inheritance
 
 ***Handlers***
 Allows send messages between two threads in a safe manner, that means 
 that sending thread puts message into destination thread queue, and 
 this destination queue will process this message in its appropriate time.
+
+Each Handler instance is associated with a single thread and that thread’s message queue. 
+When you create a new Handler, it is bound to the thread / message queue of the thread 
+that is creating it — from that point on, it will deliver messages and runnables to that 
+message queue and execute them as they come out of the message queue.
+
+There are two main uses for a Handler:
+ - To schedule messages and runnables to be executed as some point in the future.
+ - To enqueue an action to be performed on a different thread than your own.
