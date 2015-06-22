@@ -1,0 +1,72 @@
+Hibernate Notes
+
+
+Hibernate is a high-performance Object/Relational persistence and query service.
+It not only takes care of the mapping from Java classes to database tables 
+(and from Java data types to SQL data types), but also provides data query and 
+retrieval facilities.
+
+Advantages of Hibernate Framework:
+ - Opensource and Lightweight
+ - Fast performance
+ - Database Independent query
+ - Automatic table creation
+ - Simplifies complex join
+ - Provides query statistics and database status
+
+Hibernate allows you to store, fetch ,update and delete any kind of objects. Hibernate 
+lets you develop persistent classes following common Java idiom—including association, 
+inheritance, polymorphism, composition, and the Java collections framework.
+
+Key features include:
+ - Integrates elegantly with all popular J2EE application servers, Web containers 
+and in standalone applications.
+ - Natural programming model. Hibernate supports natural OO idiom; inheritance, 
+polymorphism, composition, and the Java collections framework.
+ - The query language. Hibernate addresses both sides of the problem; not only 
+how to get objects into the database, but also how to get them out again.
+
+The Configuration object is the first Hibernate object you create in any Hibernate 
+application and usually created only once during application initialization. It represents 
+a configuration or properties file required by the Hibernate. The Configuration object 
+provides two keys components:
+
+ - Database Connection: This is handled through one or more configuration files supported 
+by Hibernate. These files are hibernate.properties and hibernate.cfg.xml.
+ - Class Mapping Setup
+
+
+Core classes of hibernate:
+Session Interface - This is the primary interface used by hibernate applications. The instances 
+of this interface are lightweight and are inexpensive to create and destroy. Hibernate sessions 
+are not thread safe.
+
+SessionFactory Interface - This is a factory that delivers the session objects to hibernate 
+application.It is a heavy weighted object so generally there will be a single SessionFactory 
+for the whole application and it will be shared among all the application threads.
+
+Configuration Interface - This is used to configure hibernate. It’s also used to bootstrap hibernate. 
+Mapping documents of hibernate are located using this interface.
+
+Transaction Interface - This is an optional interface but the above three interfaces are mandatory 
+in each and every application. This interface abstracts the code from any kind of transaction 
+implementations such as JDBC transaction, JTA transaction.
+
+Query and Criteria Interface - This interface allows the user to perform queries and also control 
+the flow of the query execution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
