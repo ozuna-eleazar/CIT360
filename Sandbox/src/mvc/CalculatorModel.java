@@ -41,15 +41,15 @@ public class CalculatorModel {
 		return multiplicationValue;
 	}
 
-	private int divisionValue;
+	private float divisionValue;
 
-	public void divideTwoNumbers(int seventhNumber, int eigthNumber) {
+	public void divideTwoNumbers(float seventhNumber, float eigthNumber) {
 		
 		divisionValue = seventhNumber / eigthNumber;
 
 	}
 
-	public int getDivisionValue() {
+	public float getDivisionValue() {
 
 		return divisionValue;
 	}

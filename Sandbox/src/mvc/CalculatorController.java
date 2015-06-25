@@ -102,7 +102,8 @@ public class CalculatorController {
 	class DivisionListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
-			int seventhNumber, eigthNumber = 0;
+			float seventhNumber;
+			float eigthNumber = 0;
 
 			try {
 				 seventhNumber = theView.getSeventhNumber();

@@ -150,24 +150,24 @@ public class CalculatorView extends JFrame {
 		multiplicationButton.addActionListener(listenForCalcButton);
 	}
 
-	public int getSeventhNumber() {
+	public float getSeventhNumber() {
 
-		return Integer.parseInt(seventhNumber.getText());
+		return Float.parseFloat(seventhNumber.getText());
 	}
 
-	public int getEigthNumber() {
+	public float getEigthNumber() {
 		
-		return Integer.parseInt(eigthNumber.getText());
+		return Float.parseFloat(eigthNumber.getText());
 	}
 
-	public int getDivisionSolution() {
+	public float getDivisionSolution() {
 
-		return Integer.parseInt(divisionSolution.getText());
+		return Float.parseFloat(divisionSolution.getText());
 	}
 
-	public void setDivisionSolution(int solution) {
+	public void setDivisionSolution(float solution) {
 
-		divisionSolution.setText(Integer.toString(solution));
+		divisionSolution.setText(Float.toString(solution));
 	}
 
 	void divisionCalculateListener(ActionListener listenForCalcButton) {
