@@ -1,15 +1,19 @@
 package mvc;
-
+// The view will display to the user. It does not perform any calculations or
+// any other work like that.
 import java.awt.event.*;
 
 import javax.swing.*;
 
 public class CalculatorView extends JFrame {
-
-	private JTextField firstNumber = new JTextField(10);
+	//creates the first block where user can enter a value
+	private JTextField firstNumber = new JTextField(10); 
 	private JLabel additionLabel = new JLabel("+");
+	//creates the second block where user can enter a value
 	private JTextField secondNumber = new JTextField(10);
+	//creates the button that is labeled with Calculate
 	private JButton calculateButton = new JButton("Calculate");
+	//creates the block where the solution will be displayed to
 	private JTextField calcSolution = new JTextField(10);
 
 	private JTextField thirdNumber = new JTextField(10);
@@ -31,12 +35,13 @@ public class CalculatorView extends JFrame {
 	private JTextField divisionSolution = new JTextField(10);
 
 	CalculatorView() {
-
+		// This will start to set up the view to display it properly.
 		JPanel calcPanel = new JPanel();
-
+		// Will make sure when the user presses the X to close that the application will actually terminate.
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		// Setting the size of the display window
 		this.setSize(600, 200);
-
+		// adding the components that were made up above to the panel.
 		calcPanel.add(firstNumber);
 		calcPanel.add(additionLabel);
 		calcPanel.add(secondNumber);
@@ -64,11 +69,12 @@ public class CalculatorView extends JFrame {
 		calcPanel.add(divisionButton);
 		calcPanel.add(divisionSolution);
 		System.out.println();
-
+		
+		//adding calcPanel to the JFrame.
 		this.add(calcPanel);
 
 	}
-
+	// Getting access to the First Number
 	public int getFirstNumber() {
 
 		return Integer.parseInt(firstNumber.getText());
@@ -150,7 +156,7 @@ public class CalculatorView extends JFrame {
 	}
 
 	public int getEigthNumber() {
-
+		
 		return Integer.parseInt(eigthNumber.getText());
 	}
 

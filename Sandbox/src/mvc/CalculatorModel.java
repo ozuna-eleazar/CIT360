@@ -1,11 +1,11 @@
 package mvc;
 
 import javax.swing.JOptionPane;
-
+// This model contains the data which is calculationValue and also provides access to the data. 
 public class CalculatorModel {
 
 	private int calculationValue;
-
+	//Methods needed to perform the calculations of addition, subtraction, multiplication, and division.
 	public void addTwoNumbers(int firstNumber, int secondNumber) {
 
 		calculationValue = firstNumber + secondNumber;
@@ -44,12 +44,9 @@ public class CalculatorModel {
 	private int divisionValue;
 
 	public void divideTwoNumbers(int seventhNumber, int eigthNumber) {
+		
+		divisionValue = seventhNumber / eigthNumber;
 
-		if (eigthNumber == 0) {
-			JOptionPane.showMessageDialog(null, "Can't divide by 0!");
-		} else {
-			divisionValue = seventhNumber / eigthNumber;
-		}
 	}
 
 	public int getDivisionValue() {

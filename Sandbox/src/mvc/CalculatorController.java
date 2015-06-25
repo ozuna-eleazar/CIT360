@@ -15,8 +15,7 @@ public class CalculatorController {
 
 		this.theView.addCalculateListener(new CalculateListener());
 		this.theView.subtractCalculateListener(new SubtractionListener());
-		this.theView
-				.multiplicationCalculateListener(new MultiplicationListener());
+		this.theView.multiplicationCalculateListener(new MultiplicationListener());
 		this.theView.divisionCalculateListener(new DivisionListener());
 	}
 
@@ -24,7 +23,8 @@ public class CalculatorController {
 
 		public void actionPerformed(ActionEvent e) {
 			int firstNumber, secondNumber = 0;
-
+			// In case the user does not fill both blocks the try block will stop and errors
+			// from being triggered.
 			try {
 				firstNumber = theView.getFirstNumber();
 				secondNumber = theView.getSecondNumber();
@@ -33,7 +33,7 @@ public class CalculatorController {
 
 				theView.setCalcSolution(theModel.getCalculationValue());
 			}
-
+			// catches the error that will be triggered if users don't enter values into both blocks.
 			catch (NumberFormatException ex) {
 
 				System.out.println(ex);
@@ -105,19 +105,19 @@ public class CalculatorController {
 			int seventhNumber, eigthNumber = 0;
 
 			try {
-				seventhNumber = theView.getSeventhNumber();
-				eigthNumber = theView.getEigthNumber();
+				 seventhNumber = theView.getSeventhNumber();
+				 eigthNumber = theView.getEigthNumber();
 
 				theModel.divideTwoNumbers(seventhNumber, eigthNumber);
 
 				theView.setDivisionSolution(theModel.getDivisionValue());
 			}
-
-			catch (NumberFormatException ex) {
+			// Handles the exception if a user tries to divide a number by zero.
+			catch (ArithmeticException ex) {
 
 				System.out.println(ex);
 
-				theView.displayErrorMessage("You Need to Enter 2 Integers");
+				theView.displayErrorMessage("Can't Divide by Zero!");
 
 			}
 
