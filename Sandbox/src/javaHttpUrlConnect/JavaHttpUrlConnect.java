@@ -19,10 +19,7 @@ public class JavaHttpUrlConnect {
 			    try
 			    {
 			      String myUrl = "http://lynnpagelphotography.com/";
-			      // if your url can contain weird characters you will want to 
-			      // encode it here, something like this:
-			      // myUrl = URLEncoder.encode(myUrl, "UTF-8");
-			 
+			      
 			      String results = doHttpUrlConnectionAction(myUrl);
 			      System.out.println(results);
 			    }
