@@ -42,12 +42,6 @@ public class JavaHttpUrlConnect {
 			      url = new URL(myUrl);
 			      HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			       
-			      // just want to do an HTTP GET here
-			      connection.setRequestMethod("GET");
-			       
-			      // uncomment this if you want to write output to this url
-			      connection.setDoOutput(true);
-			       
 			      // give it 15 seconds to respond
 			      connection.setReadTimeout(15*1000);
 			      connection.connect();
@@ -85,7 +79,5 @@ public class JavaHttpUrlConnect {
 			      }
 			    }
 			  }
-	
-	
 	
 }
