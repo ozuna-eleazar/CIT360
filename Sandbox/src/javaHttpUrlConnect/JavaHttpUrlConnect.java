@@ -25,7 +25,7 @@ public class JavaHttpUrlConnect {
 			    }
 			    catch (Exception e)
 			    {
-			      // deal with the exception in your "controller"
+			     
 			    }
 			  }
 			 
