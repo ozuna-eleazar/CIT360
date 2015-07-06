@@ -1,0 +1,43 @@
+Which collection do I use?
+
+List
+  Essentially a variable-size array;
+  You can usually add/remove items at any arbitrary position
+  The order of the items is well defined
+
+  Use When:
+    Most cases where you just need to store or iterate through a "bunch of things" and later iterate through them.
+    Most popular implementations of List interface in Java are ArrayList, LinkedList and Vector class. ArrayList is 
+    more general purpose and provides random access with index, while LinkedList is more suitable for frequently
+    adding and removing elements from List.
+
+    If you want to store elements and want them to maintain an order on which they are inserted into collection then 
+    go for List, as List is an ordered collection and maintain insertion order.
+
+
+Set
+  Things can be "there or not"Ñ when you add items to a set, there's no notion of how many times the item was added, 
+  and usually no notion of ordering.
+
+  Use When:
+    Remembering "which items you've already processed"
+    Making other yes-no decisions about an item
+    
+    
+Map
+  Stores an association or mapping between "keys" and "values"
+  
+  Use When:
+    you need to say "for a given X, what is the Y"? It is often useful for implementing in-memory caches or indexes.
+    Example: For a given user ID, what is their cached name/User object?
+
+
+Tree Set
+  guarantees that elements of set will be sorted (ascending, natural, or the one specified by you via its constructor)
+  offers a few handy methods to deal with the ordered set like first(), last(), headSet(), and tailSet()
+  The TreeSet is one of two sorted collections (the other being TreeMap).
+
+
+
+Main difference between List and Set interface in Java is that List allows duplicates while Set doesn't allow duplicates.
+
