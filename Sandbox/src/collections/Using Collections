@@ -41,3 +41,5 @@ Tree Set
 
 Main difference between List and Set interface in Java is that List allows duplicates while Set doesn't allow duplicates.
 
+Collections Sharing Video: http://www.youtube.com/watch?v=OaV7gtocQl8
+
